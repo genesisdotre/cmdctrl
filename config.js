@@ -10,3 +10,4 @@
 	'<img src="http://michalstefanow.com/img/2013.jpg"/>' +
 	'<img src="http://img513.imageshack.us/img513/4706/s86.gif"/>';
 
+	var openOnStart = false;

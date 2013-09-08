@@ -9,7 +9,7 @@ if (!$.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'appended.css';
+    link.href = 'http://genesis.re/re/appended.css';
     link.media = 'all';
     head.appendChild(link);
 }
@@ -20,13 +20,13 @@ curtain.innerHTML = '<div class="close-button"></div>' + blockOfHTML;
 
 var link = document.createElement('a');
 link.setAttribute('class', 'forkit');
-link.setAttribute('data-text', 'Top Secret');
-link.setAttribute('data-text-detached', 'Drag down ');
+link.setAttribute('data-text', defaultText);
+link.setAttribute('data-text-detached', dragText);
 link.setAttribute('href', 'http://michalstefanow.com');
 link.innerHTML = '<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub">';
 
-document.body.insertBefore(link, document.body.firstChild);
-document.body.insertBefore(curtain, document.body.firstChild);
+document.body.insertBefore(link, document.body.lastChild);
+document.body.insertBefore(curtain, document.body.lastChild);
 
 /*!
  * forkit.js 0.2
@@ -35,7 +35,8 @@ document.body.insertBefore(curtain, document.body.firstChild);
  *
  * Created by Hakim El Hattab, http://hakim.se
  */
-(function(){
+
+var forkit = (function(){
 
 	var STATE_CLOSED = 0,
 		STATE_DETACHED = 1,
@@ -384,7 +385,13 @@ document.body.insertBefore(curtain, document.body.firstChild);
 	})();
 
 	initialize();
+	
+	return {
+        open: open
+    }
 
 })();
 
-curtain.style.display = '';
+if (openOnStart) {
+	forkit.open();
+}
