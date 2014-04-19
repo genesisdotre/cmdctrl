@@ -1,6 +1,6 @@
 <?php
 require_once("secret.php");
-require_once("magicquotes.php");
+require_once("magicquotes.php"); // may be required depending on PHP version on your server
 $logged = "initial";
 
 if (isset($_POST['user']) && isset($_POST['pass'])) {
@@ -9,6 +9,12 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 
 	if($user == $userDB	&& $pass == $passDB) {
 		$logged = "logged";
+
+		// session_start();
+		// $token= md5(uniqid());
+		// $_SESSION['delete_customer_token']= $token;
+		// session_write_close();
+
 	} else {
 		$logged = "fail";
 	}
@@ -27,11 +33,11 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 <script>
 	$(function() {
 		$(".greenButton").on("click", function() {
-			text = $("textarea").val();
+			var text = $("textarea").val();
 
 			$.post("save.php", {stuff : text}, function(response) {
-				$("#response").html("saved");
-	  			setTimeout(function(){$("#response").html("&nbsp;");}, 3000);
+				$("#response").html(response);
+	  			setTimeout(function(){$("#response").html("");}, 3000);
 			});
 
 		});
@@ -42,9 +48,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 
 <body>
 
-<?php
-if($logged == "logged") {
-?>
+<?php if($logged == "logged") { ?>
 
 <input type="submit" value="Save" class="greenButton" style="width:300px;"> 
 <div id="response">&nbsp;</div>
@@ -60,10 +64,7 @@ if($logged == "logged") {
 
 </textarea>
 
-
-<?php 
-} else {
-?>
+<?php } else { // not logged in ?>
 
 	<form method="post" action="admin.php">
 	<label for="user">User</label> <input type="text" id="user" name="user" placeholder="user" autofocus></input>
@@ -71,20 +72,11 @@ if($logged == "logged") {
 	<input type="submit" name="submit"></input>
 	</form>
 
-	<?php
-	if($logged == "fail") {
-	?>
+	<?php if($logged == "fail") { ?>
 
-		Loggin failed.
+	Loggin failed.
 
-	<?php
-	}
-	?>
-
-
-<?php
-}
-?>
+<?php } } ?>
 
 </body>
 </html>

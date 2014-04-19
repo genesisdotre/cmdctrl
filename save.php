@@ -9,5 +9,9 @@
 		$fh = fopen($myFile, 'w+') or die("can't open file");
 		fwrite($fh, $stuff);
 		fclose($fh);
+
+		echo "saved";
+	} else {
+		echo "there is no stuff to write";
 	}
 ?>
