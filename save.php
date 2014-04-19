@@ -2,16 +2,28 @@
 	require_once("secret.php");
 	require_once("magicquotes.php");
 
-	if (isset($_POST['stuff']))  {
+	session_start();
+	$token = $_SESSION['csrf_token'];
+	unset($_SESSION['csrf_token']);
+	session_write_close();
 
-		$stuff = $_POST['stuff'];
+	if ($token && $_POST['token']==$token) {
 
-		$fh = fopen($myFile, 'w+') or die("can't open file");
-		fwrite($fh, $stuff);
-		fclose($fh);
+		if (isset($_POST['stuff']))  {
 
-		echo "saved";
+			$stuff = $_POST['stuff'];
+
+			$fh = fopen($myFile, 'w+') or die("can't open file");
+			fwrite($fh, $stuff);
+			fclose($fh);
+
+			echo "saved";
+		} else {
+			echo "there is no stuff to write";
+		}
+		
 	} else {
-		echo "there is no stuff to write";
+		echo "CSRF violation"; // let's be helpful to the attacker, let them know what's going on
 	}
+
 ?>

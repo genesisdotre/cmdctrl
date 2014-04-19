@@ -5,5 +5,4 @@
 5. Profit!
 
 ### Dependencies
-hakim.se github ribbon
-naive auth
+* hakim.se github ribbon

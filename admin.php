@@ -10,22 +10,26 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 	if($user == $userDB	&& $pass == $passDB) {
 		$logged = "logged";
 
-		// session_start();
-		// $token= md5(uniqid());
-		// $_SESSION['delete_customer_token']= $token;
-		// session_write_close();
+		// http://stackoverflow.com/questions/1780687/preventing-csrf-in-php
+		session_start();
+		$token= md5(uniqid());
+		$_SESSION['csrf_token']= $token;
+		session_write_close();
 
 	} else {
 		$logged = "fail";
 	}
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Personal auth</title>
+</head>
 
-<title>Personal auth</title>
+<body>
+
+<?php if($logged == "logged") { ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 <link rel="stylesheet" href="styles.css">
@@ -34,8 +38,9 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 	$(function() {
 		$(".greenButton").on("click", function() {
 			var text = $("textarea").val();
+			var token = $("input[name=token]").val();
 
-			$.post("save.php", {stuff : text}, function(response) {
+			$.post("save.php", {stuff : text, token : token}, function(response) {
 				$("#response").html(response);
 	  			setTimeout(function(){$("#response").html("");}, 3000);
 			});
@@ -44,12 +49,7 @@ if (isset($_POST['user']) && isset($_POST['pass'])) {
 	});
 </script>
 
-</head>
-
-<body>
-
-<?php if($logged == "logged") { ?>
-
+<input type="hidden" name="token" value="<?php echo $token; ?>" />
 <input type="submit" value="Save" class="greenButton" style="width:300px;"> 
 <div id="response">&nbsp;</div>
 <br>
