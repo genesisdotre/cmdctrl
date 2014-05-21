@@ -1,8 +1,9 @@
+### Idea originated at #IndieWebCampUK in Brighton
+
 [Indiewebcamp](http://indiewebcamp.com/2013/UK) [notes](https://etherpad.mozilla.org/indiewebcamp-commandcontrol) [presentation](http://bit.ly/CommandControl)
 
-[Imgur](http://i.imgur.com/ibHj2Ya.png)
-
-
+### Manage all your sites from a single script
+![Problem](http://i.imgur.com/ibHj2Ya.png)
 
 ### What it does
 1. Load single .JS file asynchronously
