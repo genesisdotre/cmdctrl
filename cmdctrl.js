@@ -35,14 +35,14 @@
 		));
 
 		$("#closebutton, #closetext").click(function() {
-			// Previously I wasn't using jQuery / Zepto (only vanilla JS)
-			// 'display' property cannot be animated, I animate opactity
-			// when animating opacity has finished then it is properly hidden
-			document.getElementById('overlay').classList.add('hidden');
-			document.getElementById('fade').classList.add('hidden');
+			// 'display' property cannot be animated --> animating opactity
+			// when animating opacity has finished, only then it is properly hidden
+
+			$("#overlay").addClass("hidden");
+			$("#fade").addClass("hidden");
 			setTimeout(function() { 
-				document.getElementById('overlay').classList.add('properlyhidden');
-				document.getElementById('fade').classList.add('properlyhidden') }, 
+				$("#overlay").addClass('properlyhidden');
+				$("#fade").addClass('properlyhidden') }, 
 			1000);
 		});
 
