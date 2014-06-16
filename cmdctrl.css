@@ -94,3 +94,34 @@
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
 #mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+
+/*
+#animationwrapper {
+  background-color: rgb( 0, 0, 0 );
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+*/
+
+#animation {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+
+  opacity: 0.5;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+  z-index: 0;
+  border: 0px none rgb(255, 255, 255);
+  font: normal normal normal 13px/18px 'Titillium Web', sans-serif;
+  outline: rgb(255, 255, 255) none 0px;
+  overflow: hidden;
+}
