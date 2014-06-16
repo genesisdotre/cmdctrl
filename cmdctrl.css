@@ -3,7 +3,7 @@
     position: fixed;
     background-color: #ffffff;
     z-index: 100;
-    opacity: 1;
+    opacity: 0.9;
     -webkit-transition: opacity 1s ease-out;
     transition: opacity 1s ease-out;
     border-radius: 20px;
@@ -46,10 +46,10 @@
     z-index: 90;
 }
 
-#overlay.hidden, #fade.hidden {
+#overlay.hidden, #fade.hidden, #animation.hidden {
   opacity: 0;
 }
-#overlay.properlyhidden, #fade.properlyhidden {
+#overlay.properlyhidden, #fade.properlyhidden, #animation.properlyhidden {
   display:none;
 }
 
@@ -94,18 +94,6 @@
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
 #mc_embed_signup {background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-
-/*
-#animationwrapper {
-  background-color: rgb( 0, 0, 0 );
-  position: fixed;
-  display: block;
-  height: 100%;
-  width: 100%;
-  left: 0px;
-  top: 0px;
-}
-*/
 
 #animation {
   color: rgb(255, 255, 255);

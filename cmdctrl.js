@@ -12,9 +12,7 @@
 
 		$("body").append($(
 
-      "<div id='animationwrapper'>" +
-      "  <canvas id='animation'></canvas>" +
-      "</div>" +
+      "<canvas id='animation'></canvas>" +
 
 			"<div id='fade'></div>" +
 
@@ -49,10 +47,12 @@
 
       $("#overlay").addClass("hidden");
       $("#fade").addClass("hidden");
+      $("#animation").addClass("hidden");
       setTimeout(function() { 
         $("#overlay").addClass('properlyhidden');
-        $("#fade").addClass('properlyhidden') }, 
-      1000);
+        $("#fade").addClass('properlyhidden') , 
+        $("#animation").addClass('properlyhidden') 
+      }, 1000);
     };
 
 		$("#closebutton, #closetext").on("click", _closePopup);
@@ -76,7 +76,7 @@
         var threshold = 3 * 30 * 24 * 60 * 60 * 1000;
         
         if (new Date() - lastTime < threshold) {
-          $("#animationwrapper, #fade, #overlay").hide();
+          $("#animation, #fade, #overlay").hide();
         }
       }
       
