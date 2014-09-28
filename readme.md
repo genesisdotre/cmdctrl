@@ -6,12 +6,13 @@
 ![Problem](http://i.imgur.com/ibHj2Ya.png)
 
 ### What it does
-1. Load single .JS file asynchronously
+1. Load single JS file (TODO: remove Zepto so it doesn't weight 40KB)
 2. Load CSS asynchronously
 3. Create DIV markup
 4. Execute .JS from appended file (from point 1)
 5. Profit!
 
-### Dependencies 
-* hakim.se github ribbon
-* *(it's dropped - it wasn't behaving good on mobile)*
+### Hosting on Github Pages
+It's their core business to host files.
+I believe they are here to stay.
+Following suggestions from this SO question: http://stackoverflow.com/questions/5502540/should-github-be-used-as-a-cdn-for-javascript-libraries
