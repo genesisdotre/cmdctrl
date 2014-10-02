@@ -8,7 +8,9 @@
 
 	$(function() {
 
-    var endpoint = "http://services.stefanow.net/mailchimp/subscribe";
+    //var endpoint = "http://services.stefanow.net/mailchimp/subscribe";
+    var endpoint = "http://mailchimp-sub.herokuapp.com/subscribe";
+    
 
 		$("body").append($(
 
