@@ -62,30 +62,11 @@
     $("#mc-embedded-subscribe-form-XXX").on("submit", function() {
       var email = $("#mce-EMAIL-XXX").val();
 
-      $.post(endpoint, { email: email }, function(response){
-        console.log("got response: " + response);
-      })
+      $.post(endpoint, { email: email } );
 
       _closePopup();
       return false; 
     });
-
-    if (window.localStorage) {
-      if (localStorage["lastTime"] != null) {
-        var lastTime = new Date(parseInt(localStorage["lastTime"]));
-
-        // every 3 month display popup
-        var threshold = 3 * 30 * 24 * 60 * 60 * 1000;
-        
-        if (new Date() - lastTime < threshold) {
-          $("#animation, #fade, #overlay").hide();
-        }
-      }
-      
-      localStorage["lastTime"] = new Date().getTime(); 
-    } else {
-      // always display (do not hide)
-    }
 
     backgroundAnimationInit();
 	});
