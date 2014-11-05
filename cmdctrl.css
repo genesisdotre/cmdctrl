@@ -23,6 +23,8 @@
     img.portfolio {
       width: 200px;
     }
+
+    .break-destop { display: block; clear: both; width: 100%; height: 5px; font-size: 0px;  }
 }
 @media (max-width: 768px) {
     #overlay {
@@ -37,6 +39,8 @@
     img.portfolio {
       width: 150px;
     }
+
+    .break-mobile { display: block; clear: both; width: 100%; height: 5px; font-size: 0px;  }
 }
 
 #fade {
