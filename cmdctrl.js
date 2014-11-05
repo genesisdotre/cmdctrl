@@ -26,14 +26,14 @@
 
       "Hi, my name is Michal Stefanow and I build internet.<br>" +
 
-      "Favourite portfolio items:" +
-      "<a href='http://michalstefanow.com/portfolio/boomtodo.png' data-lightbox='roadtrip'><img src='http://michalstefanow.com/portfolio/boomtodo-small.jpg'></a>" +
-      "<a href='http://michalstefanow.com/portfolio/basialipskalarsen.jpg' data-lightbox='roadtrip'><img src='http://michalstefanow.com/portfolio/basialipskalarsen-small.jpg'></a>" +
-      "<a href='http://michalstefanow.com/portfolio/buchbilety.jpg' data-lightbox='roadtrip'><img src='http://michalstefanow.com/portfolio/buchbilety-small.jpg'></a>" +
-      "<a href='http://michalstefanow.com/portfolio/patrykwieczorek.png' data-lightbox='roadtrip'><img src='http://michalstefanow.com/portfolio/patrykwieczorek-small.jpg'></a>" +
-      "<a href='http://michalstefanow.com/portfolio/secondsme.png' data-lightbox='roadtrip'><img src='http://michalstefanow.com/portfolio/secondsme-small.jpg'></a>" +
+      "I'm fiendly, approachable and professional person. The best way to reach me: <strong><a href='mailto:mstefanow@gmail.com'>mstefanow@gmail.com</a></strong> <br><br>" +
 
-      "The best way to reach me: <strong><a href='mailto:mstefanow@gmail.com'>mstefanow@gmail.com</a></strong> <br><br>" +
+      "Favourite portfolio items:<br>" +
+      "<a href='http://michalstefanow.com/portfolio/boomtodo.png' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/boomtodo-small.jpg'></a>" +
+      "<a href='http://michalstefanow.com/portfolio/basialipskalarsen.jpg' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/basialipskalarsen-small.jpg'></a>" +
+      "<a href='http://michalstefanow.com/portfolio/buchbilety.jpg' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/buchbilety-small.jpg'></a>" +
+      "<a href='http://michalstefanow.com/portfolio/patrykwieczorek.png' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/patrykwieczorek-small.jpg'></a>" +
+      "<a href='http://michalstefanow.com/portfolio/secondsme.png' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/secondsme-small.jpg'></a>" +
 
       "Sign up to my very occassional newsletter:<br>" +
 

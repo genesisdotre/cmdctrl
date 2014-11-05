@@ -19,6 +19,10 @@
         left: 25%;
         padding: 25px;
     }
+
+    img.potfolio {
+      width: 200px;
+    }
 }
 @media (max-width: 768px) {
     #overlay {
@@ -27,6 +31,10 @@
         height: 70%;
         padding: 5%;
         margin: 5%;
+    }
+
+    img.potfolio {
+      width: 150px;
     }
 }
 
