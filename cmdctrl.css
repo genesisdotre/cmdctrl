@@ -11,6 +11,10 @@
     min-height: 250px;
 }
 
+#overlay::-webkit-scrollbar {
+ display: none;
+}
+
 @media (min-width: 769px) {
     #overlay {
         top: 5%;
@@ -18,6 +22,7 @@
         height: 80%;
         left: 10%;
         padding: 25px;
+        overflow: scroll;
     }
 
     img.portfolio {
