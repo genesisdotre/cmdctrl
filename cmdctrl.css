@@ -13,14 +13,14 @@
 
 @media (min-width: 769px) {
     #overlay {
-        top: 25%;
-        width: 50%;
-        height: 30%;
-        left: 25%;
+        top: 5%;
+        width: 80%;
+        height: 80%;
+        left: 10%;
         padding: 25px;
     }
 
-    img.potfolio {
+    img.portfolio {
       width: 200px;
     }
 }
@@ -33,7 +33,7 @@
         margin: 5%;
     }
 
-    img.potfolio {
+    img.portfolio {
       width: 150px;
     }
 }
