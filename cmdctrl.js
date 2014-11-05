@@ -50,7 +50,7 @@
 			"	</form>" +
 			"	</div>" +
 
-			"	<span class='closetext' id='closetext'> " +
+			"	<span id='closetext'> " +
 			"		<a href='#'>close this popup</a> " +
 			"	</span> " +
 
@@ -66,8 +66,8 @@
       $("#animation").addClass("hidden");
       setTimeout(function() { 
         $("#overlay").addClass('properlyhidden');
-        $("#fade").addClass('properlyhidden') , 
-        $("#animation").addClass('properlyhidden') 
+        $("#fade").addClass('properlyhidden');
+        $("#animation").addClass('properlyhidden');
       }, 1000);
     };
 
