@@ -24,8 +24,7 @@
       "Hi, my name is Michal Stefanow, I'm a web developer and I build internet.<br>" +
       "<br>" + 
 
-      "My intention is to work on a cotract basis for a <strong>fair</strong> yet <strong>affordable</strong> daily rate in the region of " + 
-      "£150 <i>(charities, non-profit)</i> and £300 <i>(finance, banking)</i>" +
+      "My intention is to work on a cotract basis for a <strong>fair yet affordable daily rate.</strong>" +
 
       "<br>" + 
       "<br>" + 
@@ -35,7 +34,6 @@
       "<a href='http://michalstefanow.com/portfolio/boomtodo.png' data-title='boomtodo.stefanow.net' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/boomtodo-small.jpg'></a>" +
       "<a href='http://michalstefanow.com/portfolio/basialipskalarsen.jpg' data-title='basialipskalarsen.com' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/basialipskalarsen-small.jpg'></a>" +
       "<a href='http://michalstefanow.com/portfolio/buchbilety.jpg' data-title='buch.co.uk/bilety' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/buchbilety-small.jpg'></a>" +
-      "<br>" +
       "<a href='http://michalstefanow.com/portfolio/patrykwieczorek.png' data-title='patrykwieczorek.pl' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/patrykwieczorek-small.jpg'></a>" +
       "<a href='http://michalstefanow.com/portfolio/secondsme.png' data-title='seconds.me' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/secondsme-small.jpg'></a>" +
       "<a href='http://michalstefanow.com/portfolio/iamthespecialist.png' data-title='michalstefanow.com (previous version)' data-lightbox='roadtrip'><img class='portfolio' src='http://michalstefanow.com/portfolio/iamthespecialist-small.jpg'></a>" +
