@@ -25,7 +25,13 @@
       "<br>" + 
 
       "My intention is to work on a cotract basis for a <strong>fair yet affordable daily rate<a href='http://www.cuppame.co.uk/find-a-freelancer/portfolio/michal'>.</a></strong>" +
+      "<br>" +
+      "<br>" +
 
+      "<a href='http://stackoverflow.com/users/775359/michal-stefanow'><img src='http://i.imgur.com/8AV9upd.png'></a>" +
+      "<a href='https://linkedin.com/in/stefek99/'><img src='http://i.imgur.com/WpZ2FL3.png'></a>" +
+      "<a href='https://github.com/stefek99'><img src='http://i.imgur.com/PrKbJnp.png'></a>" +
+      
       "<br>" + 
       "<br>" + 
       "The best way to reach me: <strong><a href='mailto:mstefanow@gmail.com'>mstefanow@gmail.com</a></strong> <br><br>" +
