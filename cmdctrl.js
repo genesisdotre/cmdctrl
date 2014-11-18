@@ -8,7 +8,6 @@
     //var endpoint = "http://services.stefanow.net/mailchimp/subscribe";
     var endpoint = "http://mailchimp-sub.herokuapp.com/subscribe";
     
-
 		$("body").append($(
 
       "<canvas id='animation'></canvas>" +
@@ -80,7 +79,7 @@
       }, 1000);
     };
 
-		$("#closebutton, #closetext").on("click", _closePopup);
+		$("#closebutton, #closetext, #fade").on("click", _closePopup);
 
     $("#mc-embedded-subscribe-form-XXX").on("submit", function() {
       var email = $("#mce-EMAIL-XXX").val();
