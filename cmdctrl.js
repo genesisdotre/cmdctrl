@@ -3,6 +3,10 @@
     alert("Zepto or jQuery has to be included");
   }
 
+  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'http://genesis.re/cmdctrl/cmdctrl.css') );
+  $('head').append( $('<script>').attr('src', 'http://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js') );
+  $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'http://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css') );
+
 	$(function() {
 
     //var endpoint = "http://services.stefanow.net/mailchimp/subscribe";
