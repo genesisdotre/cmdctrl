@@ -19,6 +19,7 @@
     #overlay {
         top: 5%;
         width: 80%;
+        max-width: 600px;
         height: 80%;
         left: 10%;
         padding: 25px;
