@@ -9,6 +9,9 @@
     border-radius: 20px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     min-height: 250px;
+    overflow: scroll;
+    margin: 0 auto;
+    position: relative;
 }
 
 #overlay::-webkit-scrollbar {
@@ -17,13 +20,11 @@
 
 @media (min-width: 769px) {
     #overlay {
-        top: 5%;
-        width: 80%;
+        top: 5vh;
         max-width: 600px;
-        height: 80%;
-        left: 10%;
+        height: 80vh;
         padding: 25px;
-        overflow: scroll;
+
     }
 
     img.portfolio {
@@ -34,12 +35,9 @@
 }
 @media (max-width: 768px) {
     #overlay {
-        top: 5%;
-        width: 80%;
-        height: 70%;
+        top: 2vh;
+        height: 80vh;
         padding: 5%;
-        margin: 5%;
-        overflow: scroll;
     }
 
     img.portfolio {
