@@ -10,16 +10,21 @@
 
   <script type="text/javascript">
 
+    window.addEventListener("message", function(event) {
+      if(event.data === "remove_iframe") {
+        var iframe = document.getElementById("cmdctrl");
+        iframe.parentNode.removeChild(iframe);
+      }
+    });
+
+    $(function() {
+      $("body").append($("<iframe id='cmdctrl' style='position:fixed;top:0;left:0;height:100%;width:100%' src='iframe-content.html'></iframe>"));
+    });
+
   </script>
 
   <style>
-  #iframe {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
+
   </style>
 
 
@@ -29,21 +34,8 @@
 
 <h1>Regular content</h1>
 <h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
-<h1>Regular content</h1>
 
-<iframe id="iframe"  src="http://genesis.re/cmdctrl/"></iframe>
+<!-- <iframe id="iframe"  src="iframe-content.html"></iframe> -->
 
 </body>
 
