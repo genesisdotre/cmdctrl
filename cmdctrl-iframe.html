@@ -28,6 +28,7 @@
 
     $("#mc-embedded-subscribe-form-XXX").on("submit", function() {
       var email = $("#mce-EMAIL-XXX").val();
+      var endpoint = "http://mailchimp-sub.herokuapp.com/subscribe";
 
       $.post(endpoint, { email: email } );
 
