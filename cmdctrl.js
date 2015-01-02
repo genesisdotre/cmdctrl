@@ -6,6 +6,7 @@ window.addEventListener("message", function(event) {
 });
 
 var iframe = document.createElement("iframe");
+iframe.id = "cmdctrl";
 iframe.src = "http://genesis.re/cmdctrl/cmdctrl-iframe.html";
 iframe.style.position = "fixed";
 iframe.style.top = 0;
