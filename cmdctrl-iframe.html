@@ -22,6 +22,8 @@
       setTimeout(function() { 
         parent.postMessage("remove_iframe", "*");
       }, 1000);
+
+      return false;
     };
 
     $("#closebutton, #closetext, #fade").on("click", _closePopup);
