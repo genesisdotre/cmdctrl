@@ -126,3 +126,13 @@
   outline: rgb(255, 255, 255) none 0px;
   overflow: hidden;
 }
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
