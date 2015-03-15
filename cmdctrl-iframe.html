@@ -30,9 +30,10 @@
       var email = $("#mce-EMAIL-XXX").val();
       var endpoint = "http://mailchimp-sub.herokuapp.com/subscribe";
 
-      $.post(endpoint, { email: email } );
+      $.post(endpoint, { email: email }, function() {
+        _closePopup(); // closing popup in the callback, otherwise request is cancelled
+      });
 
-      _closePopup();
       return false; 
     });
 
