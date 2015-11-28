@@ -1,5 +1,9 @@
-Note to self
-=======
+### Idea originated at #IndieWebCampUK in Brighton
 
-The code for ```http://mailchimp-sub.herokuapp.com/subscribe``` lives on Bitbucket: 
-https://bitbucket.org/stefek99/server-config
+[Indiewebcamp](http://indiewebcamp.com/2013/UK) [notes](https://etherpad.mozilla.org/indiewebcamp-commandcontrol) [presentation](http://bit.ly/CommandControl)
+
+### Manage all your sites from a single script
+![Problem](http://i.imgur.com/ibHj2Ya.png)
+
+### Installation
+    <script src="http://genesis.re/cmdctrl/cmdctrl.js"></script>
