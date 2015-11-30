@@ -17,7 +17,7 @@
   var fill_color = ( now.getHours() > 19 || now.getHours() < 8 ) ? 'rgba( 0, 0, 0, 0.2 )' : 'rgba( 0, 0, 0, 0.2 )';
   
   function backgroundAnimationInit() {
-    canvas = document.getElementById( 'animation' );
+    canvas = document.getElementById( 'cmdctrl-animation' );
     //clock = document.getElementById( 'countDown' );
     if ( canvas.getContext ) {
       setup();

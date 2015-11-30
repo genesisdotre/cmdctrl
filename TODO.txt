@@ -1,0 +1,6 @@
+MINIMIZE FOOTPRINT ! ! ! ! ! ! ! ! ! ! ! !! ! ! ! ! !  ! ! ! ! ! ! !
+
+NO JQUERY
+INLINE STYLES
+BASE64 IMAGES
+LOGO --- SVG? (AI ---> SVG)
