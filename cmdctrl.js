@@ -483,7 +483,7 @@ var activate = function() {
       $("#cmdctrl-fade").addClass("hidden");
       $("#cmdctrl-animation").addClass("hidden");
       setTimeout(function() { 
-        $("#cmdctrl-closebutton, #cmdctrl-closetext, #cmdctrl-fade").remove();
+        $("#cmdctrl").remove();
       }, 600);
       return false;
     };
@@ -498,6 +498,7 @@ var appendStyles = function() {
   var styles =  "#cmdctrl {" +
                 "  position: fixed;" +
                 "  top: 0;" +
+                "  z-index: 99999999;" + 
                 "}" +
                 "#cmdctrl * {" +
                 "  box-sizing: border-box;" +
