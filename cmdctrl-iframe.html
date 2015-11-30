@@ -15,10 +15,14 @@
     }
     .logo {
       float: left;
-      width: 120px;
+      width: 110px;
+    }
+    .links {
+      float: left;
+      width: calc(100% - 110px);
     }
     .link {
-      float: left;
+      display: inline-block;
       color: black;
       text-decoration: none;
       border-bottom: 3px dotted black;
@@ -38,8 +42,7 @@
       transition: all 0.6s ease-out;
       border-radius: 20px;
       font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      min-height: 250px;
-      padding: 25px;
+      padding: 15px;
       overflow: scroll;
       margin: 0 auto;
       position: relative;
@@ -51,15 +54,11 @@
 
     @media (min-width: 769px) {
       #overlay {
-        top: 10vh;
-        height: 80vh;
         max-width: 600px;
       }
     }
     @media (max-width: 768px) {
       #overlay {
-        top: 5vh;
-        height: 90vh;
         width: calc(100% - 5vh);
       }
     }
@@ -82,16 +81,16 @@
 
     #closebutton {
       position: absolute;
-      right: 10px;
+      right: 15px;
       text-decoration: none;
     }
 
     #closetext {
-        width: 100%;
-        display: block;
-        font-size: 0.8em;
-        text-align: center;
-        margin-bottom: 30px;
+      width: 100%;
+      display: block;
+      font-size: 0.8em;
+      text-align: center;
+      text-decoration: none;
     }
 
     #animation {
@@ -122,7 +121,6 @@
   $(function() {
 
     var _closePopup = function() {
-      // 'display' property cannot be animated --> animating opactity by adding class 'hidden'
 
       $("#overlay").addClass("hidden");
       $("#fade").addClass("hidden");
@@ -157,19 +155,19 @@
   
 
   <img class="logo" src="genesis-logo.png">
-
-  <a class="link" href="https://genesis.re">genesis.re</a>
-  <a class="link" href="http://michalstefanow.com">michalstefanow.com</a>
-  <a class="link" href="http://mailhustle.com">mailhustle.com</a>
-  <a class="link" href="http://mostlydoing.com">mostlydoing.com</a>
-  <a class="link" href="http://hackeryoga.com">hackeryoga.com</a>
-  <a class="link" href="http://quantumshift.org">quantumshift.org</a>
-  <a class="link" href="http://nomadland.org">nomadland.org</a>
+  <div class="links">
+    <a class="link" href="https://genesis.re">genesis.re</a>
+    <a class="link" href="http://michalstefanow.com">michalstefanow.com</a>
+    <a class="link" href="http://mailhustle.com">mailhustle.com</a>
+    <a class="link" href="http://mostlydoing.com">mostlydoing.com</a>
+    <a class="link" href="http://hackeryoga.com">hackeryoga.com</a>
+    <a class="link" href="http://quantumshift.org">quantumshift.org</a>
+    <a class="link" href="http://nomadland.org">nomadland.org</a>
+  </div>
 
   <div class="cf"></div>
-  <br>
+
   <hr>
-  <br>
 
    <span id='closetext'> 
      <a href='#'>close this popup</a> 
