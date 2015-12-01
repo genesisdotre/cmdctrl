@@ -573,7 +573,7 @@ var appendStyles = function() {
   $("<style>" + styles + "</style>").appendTo("body");
 };
 
-if (cmdctrlDisplayCondition) {
+if (cmdctrlDisplayCondition()) {
   activate();
   appendStyles();
 }
