@@ -498,6 +498,7 @@ var appendStyles = function() {
   var styles =  "#cmdctrl {" +
                 "  position: fixed;" +
                 "  top: 0;" +
+                "  left: 0;" +
                 "  z-index: 99999999;" + 
                 "}" +
                 "#cmdctrl * {" +
