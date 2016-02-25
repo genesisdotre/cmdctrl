@@ -463,6 +463,8 @@ var activate = function() {
                 "    </a>" +
                 "    <img id='cmdctrl-logo' src='http://genesis.re/cmdctrl/genesis-logo.png'>" +
                 "    <div id='cmdctrl-links'>" +
+                "      I'm looking for work at the moment, check out my <a class='cmdctrl-link' href='https://docs.google.com/document/d/1sPHQQSc31aB53ObeVrcsdngGZw2_a-ofhYsoxjdjJbY/edit?usp=sharing'>latest CV on Google Docs</a>"
+                /*
                 "      <a class='cmdctrl-link' href='https://genesis.re'>genesis.re</a>" +
                 "      <a class='cmdctrl-link' href='http://michalstefanow.com'>michalstefanow.com</a>" +
                 "      <a class='cmdctrl-link' href='http://mailhustle.com'>mailhustle.com</a>" +
@@ -470,6 +472,7 @@ var activate = function() {
                 "      <a class='cmdctrl-link' href='http://hackeryoga.com'>hackeryoga.com</a>" +
                 "      <a class='cmdctrl-link' href='http://quantumshift.org'>quantumshift.org</a>" +
                 "      <a class='cmdctrl-link' href='http://nomadland.org'>nomadland.org</a>" +
+                */
                 "    </div>" +
                 "  </div>" +
                 "</div>";
