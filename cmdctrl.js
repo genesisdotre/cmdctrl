@@ -443,9 +443,16 @@ var animation = function() {
 };
 
 var cmdctrlDisplayCondition = function() {
-  var notOK = ["genesis.re/cmdctrl", "mostlydoing.com"];
-  for (var i=0; i<notOK.length; i++) {
-    if (document.referrer.indexOf(notOK[i]) !== -1) {
+  var referrers_not_OK = ["genesis.re/cmdctrl", "mostlydoing.com"];
+  for (var i=0; i<referrers_not_OK.length; i++) {
+    if (document.referrer.indexOf(referrers_not_OK[i]) !== -1) {
+      return false;
+    }
+  }
+  
+  var locations_not_OK = ["genesis.re"];
+  for (var i=0; i<locations_not_OK.length; i++) {
+    if (document.location.href.indexOf(locations_not_OK[i]) !== -1) {
       return false;
     }
   }
@@ -463,8 +470,6 @@ var activate = function() {
                 "    </a>" +
                 "    <img id='cmdctrl-logo' src='http://genesis.re/cmdctrl/genesis-logo.png'>" +
                 "    <div id='cmdctrl-links'>" +
-                "      I'm looking for work at the moment, check out my <a class='cmdctrl-link' href='https://docs.google.com/document/d/1sPHQQSc31aB53ObeVrcsdngGZw2_a-ofhYsoxjdjJbY/edit?usp=sharing'>latest CV on Google Docs</a>"
-                /*
                 "      <a class='cmdctrl-link' href='https://genesis.re'>genesis.re</a>" +
                 "      <a class='cmdctrl-link' href='http://michalstefanow.com'>michalstefanow.com</a>" +
                 "      <a class='cmdctrl-link' href='http://mailhustle.com'>mailhustle.com</a>" +
@@ -472,7 +477,6 @@ var activate = function() {
                 "      <a class='cmdctrl-link' href='http://hackeryoga.com'>hackeryoga.com</a>" +
                 "      <a class='cmdctrl-link' href='http://quantumshift.org'>quantumshift.org</a>" +
                 "      <a class='cmdctrl-link' href='http://nomadland.org'>nomadland.org</a>" +
-                */
                 "    </div>" +
                 "  </div>" +
                 "</div>";
@@ -494,6 +498,7 @@ var activate = function() {
                   "#cmdctrl-links {" +
                   "  float: left;" +
                   "  width: calc(100% - 110px);" +
+                  "  color: black !important;" +
                   "}" +
                   ".cmdctrl-link {" +
                   "  display: inline-block;" +
