@@ -583,5 +583,5 @@ var activate = function() {
 };
 
 if (cmdctrlDisplayCondition()) {
-  activate();
+  // activate(); // no activation for now... (creating an important blog post)
 }
