@@ -471,7 +471,10 @@ var activate = function() {
                 "      <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAADy0lEQVRIx5WUfUzUdRzHX94N79DBwXHAdR54mTzcgwdoQBE0L0ykMnwkEB8u5fFIIQQiwDyONPR4clhicSgPDm2lDAU3l9mUIRvXaBH2sDb/KJdtrVb9Y2v264+Gd8cdhvv+9X193+/3vp/P5/v70Ucf52kmgXj2UUAGm1lNalBcVkSt4ZTusv5K7IDGpt0eseRpUtGyiRyKyMDJFE6c4BlQxkZM6Zpe6R9+Am7LTxD9pR7W5SawjVwK5wqow7xCPYQw9wqeeCHDTClrvQPiMZFVuPD+w+wICAuERHs1LzHhGdCCCfXR/zPPLNVwDt/zFRM4oZceBnFgPDRfOwLC0hEn064bXKHI/Ch2BARjx02+5XMYZJw2JW61Kybl0z4bOCX/0n3fsuY216CPT0i7NAOV93LWR2EgZa9olj0zP5pwtu4MekDkd5rFTXCaWoNLtvpdK5HIeIUlxe72hp1vIyaJi2T0u2jBrstwEtMJF0rfZ8fGWkzEorTM0HLzKDvQ0cYFNla71I9/UQ9HpIpfXGjl+GeM8il7kKMjouQ/+wg9VFFDLYeI8ehPnpFNqZ61yhxqNMSgJhY1kbbSA0M4aONNmjjMsvOe6uIy1pV79ft9MQrUaAggg3P00IKFBuzoz83Wruoj+SPvgQV0RqBCgT/P0scJKqjDju6stzLsGsHXfc1cdmqRDOAZ2tjLa9SEaj/2pRONIR31/dLWP5dFJmb0BBKJcsMcL/Im2hFfB/mWHtF7dFFPNDIkyEXhr/vSBV5ng80bFxadwcZBrFSyCgMq5ESj9G63EHeBkhdnwwLLAEdowEoztejRsgIlKnSoKmZr1xxkd4j/PXeUW9rPMZo4QC029DdEwypUKFiOCj8C9ks9Ap430UzSRRdIHnDQTCV1NKIn2IGAIGtXEkoUT7GZGlKG3Yb4U+cCTmLJdKGtxb20sptirMi7Hwy1/THC2M44v1Gy3+0LbeyCMqyE35pBaYNv0EIHqcg+cL+qvFVDCXZ2EX91honv5wVvg1Z6eCvNJZW01y21GkI+9GyWWJCdLo6tXk6nW7eq+jkKg1ziBonHXQeL/hb7fDQSQfKPa2dwfsc3TEI3Dvo5Q8zYo/wR/e82hN9hminooosuhnhHqnDO1+53d9kTDdxiiklw4KCbXuqpEq08Ox+7ZiIpUkUdX7sH9FNOPRaS8wN/fphZIiQcNvMkod4BFVSSwxYSQ7SNih9Fvur+0+DINmaTjZEw3wG5rMNICjsWpr8cZVddXXxb+uvi3yU/KMeSOlJezQsqZQ+ZbCHOLeBffqAbAA5ejiYAAAAASUVORK5CYII='/>" +
                 "    </a>" +
                 "    <div id='cmdctrl-description'>" +
-                "      I'm a Web Developer in London, UK. Currently seeking a new contract role, more about me: <a href='https://MichalStefanow.com'>MichalStefanow.com</a>" +
+                "      Sorry but not sorry, we are on a mission to heal the planet: <a href='https://astralship.org/investment#ready'>astralship.org</a>" +
+                "      <br>" +
+                "      <br>" +
+                "      <em>(currently pre-Kickstarter campaign)</em>" +
                 "    </div>" +
                 "  </div>" +
                 "</div>";
