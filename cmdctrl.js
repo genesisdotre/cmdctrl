@@ -442,6 +442,8 @@ var animation = function() {
   return backgroundAnimationInit;
 };
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 var cmdctrlDisplayCondition = function() {
   var referrers_not_OK = ["genesis.re/cmdctrl", "mostlydoing.com"];
   for (var i=0; i<referrers_not_OK.length; i++) {
