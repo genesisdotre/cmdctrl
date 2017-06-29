@@ -19,7 +19,6 @@ var cmdctrlDisplayCondition = function() {
 };
 
 var markup =  "<div id='cmdctrl'>" +
-            "  <canvas id='cmdctrl-animation'></canvas>" +
             "  <div id='cmdctrl-fade'></div>" +
             "  <div id='cmdctrl-overlay'>" +
             "    <a href='#' id='cmdctrl-closebutton'>" +
@@ -73,16 +72,6 @@ var styles =  "#cmdctrl * {" +
               "  top: 7px;" +
               "  text-decoration: none;" +
               "  cursor: pointer;" +
-              "}" +
-              "" +
-              "#cmdctrl-animation {" +
-              "  position: fixed;" +
-              "  height: 100%;" +
-              "  width: 100%;" +
-              "  left: 0px;" +
-              "  top: 0px;" +
-              "  opacity: 0.5;" +
-              "  z-index: 997;" +
               "}";
 
 var activate = function() {
