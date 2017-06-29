@@ -72,6 +72,7 @@ var styles =  "#cmdctrl * {" +
               "  top: 7px;" +
               "  text-decoration: none;" +
               "  cursor: pointer;" +
+              "  border-bottom: 0;" +
               "}";
 
 var activate = function() {
