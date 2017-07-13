@@ -8,7 +8,7 @@ var cmdctrlDisplayCondition = function() {
     }
   }
   
-  var locations_not_OK = [];
+  var locations_not_OK = ["astralship.org"];
   for (var i=0; i<locations_not_OK.length; i++) {
     if (document.location.href.indexOf(locations_not_OK[i]) !== -1) {
       return false;
