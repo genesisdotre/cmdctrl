@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- faster loading, instant perception, ability to collaborate at a short notice, trust and trustless - you have trust in community without explicit trust -->
+  
+	<title>Pill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+</head>
+
+<body>
+
+  <div id="messages" class="dummy"></div>
+
+
+  <script>
+  if (location.host.indexOf("localhost") !== -1) {
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  }
+  </script>  
+
+  <script>  
+    var messages = [
+      "Lake Chad",
+      "Bangladesh",
+      "Protein Source for 20%",
+      "$1 per day"
+    ];
+
+    var generatedCode = messages.map(function(message, index) { 
+                                      return "<div class='message' id='message" + index + "'>" + messages[index] + "</div>";
+                                    })
+                                .join("\n");
+
+    document.getElementById("messages").innerHTML = generatedCode;
+
+    var counter = 0;
+    setInterval(function() {
+      console.log("setInterval called");
+      // remove exsting "active" class: TODO - optmise me
+      var temp = document.getElementsByClassName("message");
+      for (var i=0; i<temp.length; i++) {
+        temp[i].classList.remove("active");
+      }
+
+      document.getElementById("message" + (counter++ % messages.length)).classList.add("active");
+
+    }, 5000);
+
+    // kickstart animation
+    document.getElementById("message0").classList.add("active"); 
+
+
+  </script>
+
+  <style>
+
+    body {
+/*      background: url(background.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;*/
+      background: black
+    }
+
+    #messages > div {
+      position: absolute;
+      transition: all 0.5s linear;
+      opacity: 0;
+      font-family: monospace;
+      color: white;
+      font-weight: bold;
+    }
+    #messages > div.active {
+      opacity: 1;
+    }
+
+  </style>
+  
+</body>
+
+</html>
