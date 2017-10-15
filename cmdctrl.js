@@ -55,7 +55,7 @@ var styles =  "#cmdctrl * {" +
               "  width: 100vw;" +
               "  background-color: black;" +
               "  color: white;" +
-              "  z-index: 1000;" +
+              "  z-index: 10000000;" +
               "  transition: all 0.6s ease-out;" +
               "  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;" +
               "  padding: 15px;" +
@@ -79,6 +79,7 @@ var styles =  "#cmdctrl * {" +
               "	position: absolute;" +
 			  "  top: -8px;" +
 			  "  left: 14px;" +
+			  "  max-width: 32px !important;"
 			  "}";
 
 var activate = function() {
